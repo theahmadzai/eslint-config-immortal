@@ -1,6 +1,6 @@
 # eslint-config-immortal
 
-> ESLint rules Immortals
+> ESLint rules for Immortals
 
 ## Usage
 
