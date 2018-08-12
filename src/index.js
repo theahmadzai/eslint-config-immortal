@@ -66,7 +66,7 @@ module.exports = {
     // no-caller
     // no-case-declarations
     // no-div-regex
-    // no-else-return
+    'no-else-return': [ 'error' ],
     // no-empty-function
     // no-empty-pattern
     // no-eq-null
@@ -281,34 +281,43 @@ module.exports = {
     */
     // arrow-body-style
     // arrow-parens
-    // arrow-spacing
+    'arrow-spacing': [ 'error', {
+      'after': true,
+      'before': true
+    }],
     // constructor-super
     // generator-star-spacing
     // no-class-assign
     // no-confusing-arrow
     // no-const-assign
     // no-dupe-class-members
-    'no-duplicate-imports': 'error'
+    'no-duplicate-imports': 'error',
     // no-new-symbol
     // no-restricted-imports
     // no-this-before-super
     // no-useless-computed-key
     // no-useless-constructor
     // no-useless-rename
-    // no-var
-    // object-shorthand
-    // prefer-arrow-callback
-    // prefer-const
+    'no-var': [ 'error' ],
+    'object-shorthand': [ 'error', 'always', {
+      'avoidQuotes': true,
+      'ignoreConstructors': false
+    }],
+    'prefer-arrow-callback': [ 'error', {
+      'allowNamedFunctions': false,
+      'allowUnboundThis': true
+    }],
+    'prefer-const': [ 'error' ],
     // prefer-destructuring
     // prefer-numeric-literals
-    // prefer-rest-params
+    'prefer-rest-params': [ 'error' ],
     // prefer-spread
-    // prefer-template
+    'prefer-template': [ 'error' ],
     // require-yield
     // rest-spread-spacing
     // sort-imports
     // symbol-description
-    // template-curly-spacing
+    'template-curly-spacing': [ 'error', 'always' ]
     // yield-star-spacing
   }
 };
