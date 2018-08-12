@@ -12,9 +12,9 @@ const report = new eslint.CLIEngine({
 ]);
 
 report.results.forEach((value, key) => {
-  console.log(`=> ${key}
-    Errors: ${value.errorCount}
-    Fixable: ${value.fixableErrorCount}
-    Warnings: ${value.warningCount}
+  console.log(`=> ${ key }
+    Errors: ${ value.errorCount }
+    Fixable: ${ value.fixableErrorCount }
+    Warnings: ${ value.warningCount }
   `);
 });
