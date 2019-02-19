@@ -74,7 +74,7 @@ module.exports = {
     // no-extend-native
     // no-extra-bind
     // no-extra-label
-    // no-fallthrough
+    'no-fallthrough': 'off',
     // no-floating-decimal
     // no-global-assign
     // no-implicit-coercion
@@ -195,7 +195,7 @@ module.exports = {
         afterColon: true
       }
     ],
-    // keyword-spacing
+    'keyword-spacing': 'error',
     // line-comment-position
     'linebreak-style': [ 'error', 'unix' ],
     // lines-around-comment
@@ -266,9 +266,9 @@ module.exports = {
     // semi-style
     // sort-keys
     // sort-vars
-    // space-before-blocks
+    'space-before-blocks': [ 'error', 'always' ],
     // space-before-function-paren
-    // space-in-parens
+    'space-in-parens': [ 'error', 'never' ],
     // space-infix-ops
     // space-unary-ops
     // spaced-comment
@@ -307,12 +307,12 @@ module.exports = {
       'allowNamedFunctions': false,
       'allowUnboundThis': true
     }],
-    'prefer-const': [ 'error' ],
+    // prefer-const
     // prefer-destructuring
     // prefer-numeric-literals
     'prefer-rest-params': [ 'error' ],
     // prefer-spread
-    'prefer-template': [ 'error' ],
+    // prefer-template
     // require-yield
     // rest-spread-spacing
     // sort-imports
